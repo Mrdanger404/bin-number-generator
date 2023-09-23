@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+
+    <title>Bin number generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form">
+                <form>
+                    <label for="card">Choose card</label><br>
+                    <select name="card" id="card">
+                        <option value="5">Master card</option>
+                        <option value="4">Visa card</option>
+                    </select><br>
+                    <label for="length">length</label>
+                    <input type="number" name="length" id="length" placeholder="enter length"><br>
+                    <input type="submit" value="generate" id="generate">
+                </form>
+                <button id="download">Download file</button>
+            </div>
+        </div>
+        
+        <div class="output">
+            <div id="card-name">
+                <h1></h1>
+            </div>
+            <div id="numbers">
+                <table border="1" onclick="window.print()" border-collapse="collapse" id="tableInfo" style="overflow: scroll;">
+                    <thead>
+                        <tr>
+                            <th>Card Status</th>
+                            <th>Bin Number</th>
+                            <th>Scheme</th>
+                            <th>Type</th>
+                            <th>Issuer</th>
+                            <th>CardTier</th>
+                            <th>Country</th>
+                            <th>A2</th>
+                            <th>A3</th>
+                            <th>N3</th>
+                            <th>ISD</th>
+                            <th>Cont</th>
+                            <th>Luhn</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js" ></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+/* Base styles for all screen sizes */
+*{
+    margin: 0;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .form {
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+    text-align: center;
+  }
+  .form-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    background: white;
+    padding: 20px;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  form {
+    text-align: center;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  select,
+  input[type="number"],
+  input[type="submit"],
+  #download {
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"],
+  #download {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover,
+  #download:hover {
+    background-color: #0056b3;
+  }
+  
+  .output {
+    flex: 2;
+    animation: slideIn 0.5s ease-in-out;
+    margin-top: 325px;
+    text-align: center;
+    z-index: 2;
+    background-color: #fff;
+  }
+  .output:hover{
+    box-shadow: inset ;
+  }
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  #card-name h1 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  #numbers {
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    text-align: center;
+
+  }
+  
+  table th,
+  table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+
+  table thead{
+    background-color: forestgreen;
+  }
+
+  tbody tr:nth-child(even){
+    background-color: #007bff;
+  }
+  tbody tr:hover{
+    background-color: darkgrey;
+  }
+  /* Media Queries for Responsive Design */
+  
+  /* Mobile styles */
+  /* @media (max-width: 767px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .form,
+    .output {
+      max-width: 90%;
+    }
+  
+    #numbers {
+      overflow-x: auto;
+    }
+  }
+  
+  /* Tablet styles */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .form {
+      max-width: 60%;
+    }
+  
+    .output {
+      margin-top: 40px;
+    }
+  } */
+  
+
+ 
+  
